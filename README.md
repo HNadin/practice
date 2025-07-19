@@ -4,7 +4,7 @@
 
 ## 🌐 Демо
 
-**GitHub Pages:** [https://hnadin.github.io/mirro-photography/](https://hnadin.github.io/practice/)
+**GitHub Pages:** [https://hnadin.github.io/practice/](https://hnadin.github.io/practice/)
 
 ## 📋 Опис проекту
 
