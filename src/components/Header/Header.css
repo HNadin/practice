@@ -1,47 +1,108 @@
 .header {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #F4F3F0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
 }
 
-.nav {
+.header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.nav {
+    margin-left: auto;
+    margin-right: 1.5rem;
 }
 
-.nav-links {
+.logo h1 {
+    font-size: 2.5rem;
+    color: #3A5F56;
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bolder;
+}
+
+.nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    gap: 2.5rem;
 }
 
-.nav-links a {
-    color: white;
+.nav a {
     text-decoration: none;
+    color: #3A5F56;
+    font-weight: 400;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav-links a:hover {
-    color: #3498db;
+.nav a:hover {
+    color: #3A5F56;
+}
+
+.cart-btn {
+    background: #3A5F56;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart-btn:hover {
+    background: #2d4a42;
+    transform: translateY(-1px);
+}
+
+.cart-btn svg {
+    width: 16px;
+    height: 16px;
+    color: black;
+}
+
+.cart-count {
+    background: #FFFFFF;
+    color: #3A5F56;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        gap: 1rem;
+    .header .container {
+        padding: 0 1rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .nav ul {
+        gap: 1.5rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
     }
 }

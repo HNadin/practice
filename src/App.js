@@ -1,21 +1,23 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import HeroSection from './components/HeroSection/HeroSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import PresetStoreSection from './components/PresetStoreSection/PresetStoreSection';
+import ContactSection from './components/ContactSection/ContactSection';
 import Footer from './components/Footer/Footer';
-import ProjectDescription from './components/ProjectDescription/ProjectDescription';
-import AuthorInfo from './components/AuthorInfo/AuthorInfo';
 import './App.css';
 
-function App() {
+const App = () => {
     return (
         <div className="App">
             <Header />
-            <main className="main-content">
-                <ProjectDescription />
-                <AuthorInfo />
-            </main>
+            <HeroSection />
+            <ServicesSection />
+            <PresetStoreSection />
+            <ContactSection />
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

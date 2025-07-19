@@ -1,0 +1,161 @@
+.services {
+    padding: 6rem 0;
+    background: white;
+    position: relative;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at bottom left, rgba(58, 95, 86, 0.47) 0%, rgba(58, 95, 86, 0) 70%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.section-divider {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.divider-svg {
+    width: 160px;
+    height: 19px;
+}
+
+.services h2 {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #3A5F56;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.services-description {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: #F4F3F0;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: rgba(58, 95, 86, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-icon {
+    width: 24px;
+    height: 24px;
+    color: #3A5F56;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3A5F56;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.service-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.read-more {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: #3A5F56;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+.read-more:hover {
+    color: #2d4940;
+}
+
+@media (max-width: 768px) {
+    .services::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        padding: 4rem 0;
+    }
+
+    .services h2 {
+        font-size: 1.75rem;
+    }
+
+    .services-description {
+        font-size: 0.9rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+}
