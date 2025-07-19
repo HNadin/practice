@@ -6,6 +6,7 @@ import PresetStoreSection from './components/PresetStoreSection/PresetStoreSecti
 import ContactSection from './components/ContactSection/ContactSection';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import AuthorInfo from "./components/AuthorInfo/AuthorInfo";
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
             <PresetStoreSection />
             <ContactSection />
             <Footer />
+            <AuthorInfo />
         </div>
     );
 };

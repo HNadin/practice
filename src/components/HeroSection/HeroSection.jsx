@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <div className="hero-content">
                     <div className="hero-text">
                         <h1>Hi, I'm James Mirro &<br />I'm a photographer.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                        <p>Mirro Photography is an elegant one-page Inca website showcasing the work and services of a professional photographer. The site includes a portfolio, a photo editing preset store, a description of services, and contact information.</p>
                         <button className="cta-button">Read more</button>
                     </div>
                     <div className="hero-image">
