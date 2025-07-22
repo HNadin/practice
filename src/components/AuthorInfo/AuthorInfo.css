@@ -70,7 +70,14 @@
     margin-top: 1.5rem;
 }
 
-/* Responsive Design */
+.authorinfo {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+.author-content {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
 @media (max-width: 768px) {
     .author-content {
         flex-direction: column;

@@ -89,6 +89,16 @@
     font-weight: 500;
 }
 
+.logo h1 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo h1:hover {
+    transform: scale(1.05);
+    color: #2d4a42;
+}
+
 @media (max-width: 768px) {
     .header .container {
         padding: 0 1rem;
